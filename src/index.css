@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #141414;
+  --color-mustard: #FFB800;
+  --color-brick: #B22222;
+  --color-dark-gray: #1C1C1C;
+  
+  --font-display: "Montserrat", sans-serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@400;500;600&display=swap');
+
+  body {
+    @apply bg-charcoal text-white font-sans antialiased;
+  }
+}
+
+@layer components {
+  .industrial-border {
+    @apply border border-white/10;
+  }
+  
+  .btn-primary {
+    @apply px-8 py-4 bg-mustard text-charcoal font-display font-bold uppercase tracking-wider transition-all hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 border-2 border-mustard text-mustard font-display font-bold uppercase tracking-wider transition-all hover:bg-mustard hover:text-charcoal;
+  }
+}

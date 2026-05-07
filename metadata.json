@@ -1,0 +1,8 @@
+{
+  "name": "MJ's Bites - Ikeja City Mall",
+  "description": "Premium burger and sandwich restaurant in Ikeja City Mall, Lagos. Big Bites, Bigger Flavors.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}
